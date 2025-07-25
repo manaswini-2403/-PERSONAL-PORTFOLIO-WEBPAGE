@@ -76,25 +76,3 @@ Contact: Includes links to connect via email, LinkedIn, and GitHub with a "Feel 
 
 Tech Stack: Built using HTML and CSS for simplicity and performance.
 
-Setup Instructions
-
-
-
-
-
-Clone the repository:
-
-git clone https://github.com/your-username/your-repo-name.git
-
-
-
-Open index.html in a web browser to view the portfolio.
-
-
-
-Customize as needed:
-
-
-
-
-
