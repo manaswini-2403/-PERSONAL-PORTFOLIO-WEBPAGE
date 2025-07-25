@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manaswini Sangepu - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%); /* Dark gradient inspired by Yasio */
+            color: #e0e0e0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark nav */
+            padding: 1.5rem;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px); /* Glassmorphism effect */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 2rem;
+        }
+
+        nav ul li a {
+            color: #00d4ff; /* Bright cyan accent */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            position: relative;
+        }
+
+        nav ul li a:hover {
+            color: #ff007a; /* Pink accent on hover, inspired by Yasio's vibrant colors */
+            transform: scale(1.1);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #ff007a;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Sections */
+        section {
+            min-height: 100vh;
+            padding: 6rem 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Headings */
+        h1, h2 {
+            font-size: 3.5rem; /* Bold, large typography like Yasio */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            color: #00d4ff;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        /* Home Section */
+        #home {
+            background: url('https://source.unsplash.com/random/1920x1080/?futuristic,tech') no-repeat center center/cover;
+            text-align: center;
+            position: relative;
+        }
+
+        #home::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+        }
+
+        #home h1 {
+            font-size: 4.5rem; /* Larger for impact, like Yasio */
+            z-index: 1;
+            animation: slideInLeft 1.2s ease;
+        }
+
+        #home p {
+            font-size: 1.5rem;
+            max-width: 700px;
+            z-index: 1;
+            color: #e0e0e0;
+            animation: slideInRight 1.2s ease;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* About Section */
+        #about {
+            background: rgba(26, 26, 46, 0.9); /* Dark, semi-transparent background */
+            text-align: center;
+            border-radius: 15px;
+            max-width: 900px;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 1rem auto;
+            line-height: 1.8;
+            color: #d0d0d0;
+        }
+
+        /* Projects Section */
+        #projects {
+            background: transparent;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .project-card {
+            background: rgba(26, 26, 46, 0.9); /* Dark card background */
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 30px rgba(0, 212, 255, 0.3); /* Cyan glow on hover */
+        }
+
+        .project-card h3 {
+            color: #00d4ff;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .project-card p {
+            color: #d0d0d0;
+        }
+
+        /* Internships Section */
+        #internships {
+            background: transparent;
+        }
+
+        .internship-list {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .internship-item {
+            background: rgba(26, 26, 46, 0.9);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .internship-item:hover {
+            background: rgba(50, 50, 80, 0.9);
+            transform: translateY(-10px);
+        }
+
+        .internship-item h3 {
+            color: #00d4ff;
+            font-size: 1.6rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .internship-item p {
+            color: #d0d0d0;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            border-radius: 15px;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            margin-top: 1.5rem;
+        }
+
+        .contact-info a {
+            color: #00d4ff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #ff007a;
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 0.8rem 0;
+            }
+
+            h1, h2 {
+                font-size: 2.5rem;
+            }
+
+            #home h1 {
+                font-size: 3rem;
+            }
+
+            #home p {
+                font-size: 1.2rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Manaswini Sangepu</h1>
+        <p>A final year student and an aspiring web developer passionate about creating innovative and user-friendly digital solutions.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Manaswini Sangepu, a final year student with a strong passion for web development and technology. My journey in tech began with a curiosity to build impactful solutions, leading me to specialize in creating responsive and dynamic websites. I have hands-on experience in HTML, CSS, and Python, with a keen interest in machine learning applications. Through my internships, I’ve honed my skills in both front-end development and innovative problem-solving. I am driven by a desire to learn and grow in the ever-evolving tech industry. My goal is to contribute to meaningful projects that make a difference. I thrive in collaborative environments and am always eager to tackle new challenges. Let’s connect and create something amazing together!</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Blood Bank Management System</h3>
+                <p>A web-based application developed using HTML and CSS to manage blood donation records, enabling efficient tracking of donors and inventory.</p>
+            </div>
+            <div class="project-card">
+                <h3>Phishing Detection Using Machine Learning</h3>
+                <p>A Python-based project utilizing machine learning algorithms to detect phishing websites, enhancing online security through predictive analysis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="internships">
+        <h2>Internships</h2>
+        <div class="internship-list">
+            <div class="internship-item">
+                <h3>CodTech Internship - Web Development</h3>
+                <p>Developed responsive web applications and enhanced user interfaces using modern web technologies like HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="internship-item">
+                <h3>AICTE Internship</h3>
+                <p>Contributed to innovative tech projects, focusing on integrating advanced solutions and gaining practical industry experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or opportunities!</p>
+        <div class="contact-info">
+            <a href="mailto:sangepumanu24@example.com">manaswinisangepu@example.com</a>
+            <a href="https://linkedin.com/in/manaswinisangepu">LinkedIn</a>
+            <a href="https://github.com/manaswinisangepu">GitHub</a>
+        </div>
+    </section>
+</body>
+</html>
