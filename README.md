@@ -28,11 +28,13 @@ Sections:
 
 
 
-Home: Introduces me, Manaswini Sangepu, with a tech-themed background.
+Home: 
+Introduces me, Manaswini Sangepu, with a tech-themed background.
 
 
 
-About: Describes my passion for technology, skills, and career goals in 8 lines.
+About: 
+Describes my passion for technology, skills, and career goals in 8 lines.
 
 
 
@@ -42,11 +44,13 @@ Projects: Showcases two projects:
 
 
 
-Blood Bank Management System: A web app built with HTML and CSS to manage blood donation records.
+Blood Bank Management System: 
+A web app built with HTML and CSS to manage blood donation records.
 
 
 
-Phishing Detection Using Machine Learning: A Python-based ML project for detecting phishing websites.
+Phishing Detection Using Machine Learning:
+A Python-based ML project for detecting phishing websites.
 
 
 
@@ -56,11 +60,13 @@ Internships: Highlights my experiences:
 
 
 
-CodTech Internship (Web Development): Developed responsive web applications.
+CodTech Internship (Web Development): 
+Developed responsive web applications.
 
 
 
-AICTE Internship: Contributed to innovative tech projects.
+AICTE Internship:
+Contributed to innovative tech projects.
 
 
 
@@ -92,50 +98,3 @@ Customize as needed:
 
 
 
-Update the Contact section with your actual email, LinkedIn, and GitHub URLs.
-
-
-
-Optionally, replace the Unsplash background image in the Home section (https://source.unsplash.com/random/1920x1080/?futuristic,tech) with a local image.
-
-Usage
-
-
-
-
-
-Navigate through sections using the fixed top navigation bar.
-
-
-
-Explore projects and internships via interactive cards that elevate and glow on hover.
-
-
-
-Enjoy a responsive experience across all device sizes.
-
-Inspiration
-
-The design draws inspiration from yasio.dev, featuring a dark, tech-focused aesthetic with vibrant accents and a clean, user-friendly layout.
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Contact
-
-Feel free to reach out for collaborations or opportunities:
-
-
-
-
-
-Email: your-email@example.com
-
-
-
-LinkedIn: Your LinkedIn
-
-
-
-GitHub: Your GitHub
