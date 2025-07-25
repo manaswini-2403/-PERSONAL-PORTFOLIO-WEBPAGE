@@ -1,48 +1,141 @@
-Manaswini Sangepu - Personal Portfolio
-Overview
-This is a responsive, single-page portfolio website showcasing my skills, projects, and internships as an aspiring web developer. Designed with a modern, dark-themed aesthetic inspired by yasio.dev, the portfolio features smooth animations, a clean layout, and a futuristic tech vibe, highlighting my work in web development and machine learning.
+Manaswini Sangepu - Portfolio
+
+About
+
+This is my personal portfolio website, a single-page application showcasing my skills, projects, and internships as a final-year student and aspiring web developer. Inspired by the sleek and modern design of yasio.dev, it features a dark theme, bold typography, and smooth animations to highlight my work in web development and machine learning.
+
 Features
 
-Responsive Design: Adapts seamlessly to desktop and mobile devices.
-Modern Aesthetic: Dark gradient theme with cyan and pink accents, bold typography, and glassmorphism effects.
-Smooth Animations: Fade-in and slide-in transitions for sections, with interactive hover effects on navigation, project cards, and internship items.
+
+
+
+
+Responsive Design: Seamlessly adapts to desktop and mobile devices.
+
+
+
+Modern Aesthetic: Dark gradient background with cyan and pink accents, glassmorphism effects, and bold typography for a futuristic vibe.
+
+
+
+Animations: Smooth fade-in and slide-in transitions for sections, with interactive hover effects on navigation, project cards, and internship items.
+
+
+
 Sections:
-Home: Introduces me with a bold headline and tech-themed background.
-About: Details my background, skills, and passion for technology.
-Projects: Showcases two projects: a Blood Bank Management System (HTML/CSS) and a Phishing Detection System (Python/ML).
-Internships: Highlights my experience with CodTech (Web Development) and AICTE internships.
-Contact: Provides links to connect via email, LinkedIn, and GitHub.
 
 
-Tech Stack: Built using HTML and CSS, with no JavaScript for simplicity and performance.
+
+
+
+Home: Introduces me, Manaswini Sangepu, with a tech-themed background.
+
+
+
+About: Describes my passion for technology, skills, and career goals in 8 lines.
+
+
+
+Projects: Showcases two projects:
+
+
+
+
+
+Blood Bank Management System: A web app built with HTML and CSS to manage blood donation records.
+
+
+
+Phishing Detection Using Machine Learning: A Python-based ML project for detecting phishing websites.
+
+
+
+Internships: Highlights my experiences:
+
+
+
+
+
+CodTech Internship (Web Development): Developed responsive web applications.
+
+
+
+AICTE Internship: Contributed to innovative tech projects.
+
+
+
+Contact: Includes links to connect via email, LinkedIn, and GitHub with a "Feel free to contact me" message.
+
+
+
+Tech Stack: Built using HTML and CSS for simplicity and performance.
 
 Setup Instructions
 
-Clone the repository:git clone https://github.com/your-username/your-repo-name.git
+
+
+
+
+Clone the repository:
+
+git clone https://github.com/your-username/your-repo-name.git
+
 
 
 Open index.html in a web browser to view the portfolio.
-Customize the content:
-Update the contact links in the Contact section with your email, LinkedIn, and GitHub URLs.
-Replace the Unsplash background image URL in the Home section with a local image if desired.
-
-ScreenShots:
 
 
+
+Customize as needed:
+
+
+
+
+
+Update the Contact section with your actual email, LinkedIn, and GitHub URLs.
+
+
+
+Optionally, replace the Unsplash background image in the Home section (https://source.unsplash.com/random/1920x1080/?futuristic,tech) with a local image.
 
 Usage
 
-Navigate through sections using the fixed navigation bar.
-Explore projects and internships with interactive cards that elevate on hover.
-Responsive design ensures a seamless experience on all devices.
+
+
+
+
+Navigate through sections using the fixed top navigation bar.
+
+
+
+Explore projects and internships via interactive cards that elevate and glow on hover.
+
+
+
+Enjoy a responsive experience across all device sizes.
 
 Inspiration
-The design is inspired by yasio.dev, featuring a dark theme, bold typography, and a futuristic aesthetic tailored to showcase technical skills and projects.
+
+The design draws inspiration from yasio.dev, featuring a dark, tech-focused aesthetic with vibrant accents and a clean, user-friendly layout.
+
 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 Contact
-Feel free to reach out for collaborations or feedback:
+
+Feel free to reach out for collaborations or opportunities:
+
+
+
+
 
 Email: your-email@example.com
+
+
+
 LinkedIn: Your LinkedIn
+
+
+
 GitHub: Your GitHub
